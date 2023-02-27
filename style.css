@@ -1,98 +1,263 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 .main {
-    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-    height: 100vh;
-    width: 100vw;
+  background-image: linear-gradient(to top, #0250c5 0%, #d43f8d 100%);  height: 100vh;
+  width: 100vw;
 }
 
 #nav-bar {
-    height: 70px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    top: 0px;
-    width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
 }
 
 #nav-bar a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: black;
-    padding: 10px 20px;
-    transition: 0.2s ease-in-out;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  padding: 10px 20px;
+  transition: 0.2s ease-in-out;
 }
 
 #nav-bar a:hover {
-    background-color: rgb(44, 88, 176);
-    color: white;
-    border-radius: 10rem;
+  background-color: black;
+  color: white;
+  border-radius: 10rem;
 }
 
 .home-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
+  height: 100%;
+  width: 100%;
+  display: flex;
 }
 
 .container-left {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .pro-image-container {
-    height: auto;
-    width: auto;
-    background-color: grey;
-    overflow: hidden;
+  height: 350px;
+  width: 300px;
+  background-color: grey;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.22);
+}
+
+.pro-image-container img {
+  height: 350px;
+  width: 350px;
 }
 
 .container-right {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-    gap: 20px;
-    height: 100%;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 50%;
 }
 
 .container-right p {
-    font-size: 22px;
+  font-size: 22px;
 }
 
 #greet {
-    font-size: 40px;
-    font-weight: 500;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 #name {
-    font-size: 50px;
+  font-size: 50px;
 }
+
 .home-footer {
-    height: 300px;
-    display: flex;
-    background-color:#9890e3;
-  }
+  height: 500px;
+  display: flex;
+  background-color: #0250c5;
+}
+
+.fcontainer-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fcontainer-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.fcontainer-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  height: 200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.fcontainer-right form input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 2px solid rgb(27, 22, 161);
+  font-size: 17px;
+  padding-left: 10px;
+  color: rgb(39, 29, 133);
+}
+
+.fcontainer-right form input::placeholder {
+  font-weight: 400;
+  color: rgb(28, 37, 157);
+}
+
+.fcontainer-right form input:focus {
+  outline: none;
+}
+
+.fcontainer-right form button {
+  margin-top: 10px;
+  padding: 10px 50px;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: none;
+}
+
+.fcontainer-right form button:hover {
+  cursor: pointer;
+}
+
+.about-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 950px;
+  background-color: rgba(255, 255, 255, 0.333);
+  border-radius: 2rem;
+  flex-direction: column;
+  gap: 50px;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.11);
+}
+
+.about-container p {
+  font-size: 18px;
+}
+
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.contact-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.contact-right h2 {
+  font-size: 30px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background-color: red; */
+  height: 200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-right form input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-bottom: 2px solid rgb(107, 170, 247);
+  font-size: 17px;
+  padding-left: 10px;
+  color: black;
+}
+
+.contact-right form input::placeholder {
+  font-weight: 400;
+  color: rgb(107, 170, 247);
+}
+
+.contact-right form input:focus {
+  outline: none;
+}
+
+.contact-right form button {
+  margin-top: 10px;
+  padding: 10px 50px;
+  font-size: 15px;
+  color: white;
+  background-color: black;
+  border: radius 1rem;
+}
+
+.contact-right form button:hover {
+  cursor: pointer;
   
-  .fcontainer-left {
-    width: 50%;
-    height: 100%;
-    background-color:#b1f4cf(202, 250, 57);
-  }
-  
-  .fcontainer-right {
-    width: 50%;
-    height: 100%;
-    background-color:#b1f4cf(230, 92, 252);
-  }
+}
